@@ -1127,7 +1127,7 @@ body {
 }
 .tiburones__flecha {
   position: absolute;
-  top: 19%;
+  top: 15%;
   opacity: 0;
 }
 .tiburones__flecha.activo {
@@ -1140,7 +1140,7 @@ body {
 }
 .tiburones__izq.svg {
   width: 200%;
-  height: 14rem;
+  height: 17.5rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1157,7 +1157,7 @@ body {
 }
 .tiburones__der.svg {
   width: 200%;
-  height: 14rem;
+  height: 17.5rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1374,7 +1374,7 @@ body {
 }
 .engendros__flecha {
   position: absolute;
-  top: 19%;
+  top: 15%;
   opacity: 0;
 }
 .engendros__flecha.activo {
@@ -1387,7 +1387,7 @@ body {
 }
 .engendros__izq.svg {
   width: 200%;
-  height: 14rem;
+  height: 17.5rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1404,7 +1404,7 @@ body {
 }
 .engendros__der.svg {
   width: 200%;
-  height: 14rem;
+  height: 17.5rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1621,7 +1621,7 @@ body {
 }
 .monstruos__flecha {
   position: absolute;
-  top: 19%;
+  top: 15%;
   opacity: 0;
 }
 .monstruos__flecha.activo {
@@ -1634,7 +1634,7 @@ body {
 }
 .monstruos__izq.svg {
   width: 200%;
-  height: 14rem;
+  height: 17.5rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1651,7 +1651,7 @@ body {
 }
 .monstruos__der.svg {
   width: 200%;
-  height: 14rem;
+  height: 17.5rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1868,7 +1868,7 @@ body {
 }
 .humor__flecha {
   position: absolute;
-  top: 19%;
+  top: 15%;
   opacity: 0;
 }
 .humor__flecha.activo {
@@ -1881,7 +1881,7 @@ body {
 }
 .humor__izq.svg {
   width: 200%;
-  height: 14rem;
+  height: 17.5rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1898,7 +1898,7 @@ body {
 }
 .humor__der.svg {
   width: 200%;
-  height: 14rem;
+  height: 17.5rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
