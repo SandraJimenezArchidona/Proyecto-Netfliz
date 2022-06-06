@@ -121,8 +121,12 @@
     background: var(--color-tipo);
     color: black;
     border-radius: .5rem;
-
+    cursor: pointer;
     @include flex(row, nowrap, center, center);
+  }
+
+  &__play:hover{
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   &__iconoP{
@@ -142,8 +146,12 @@
     padding: 2%;
     background-color: grey;
     border-radius: .5rem;
-
+    cursor: pointer;
     @include flex(row, nowrap, center, center);
+  }
+
+  &__info:hover{
+    background-color: rgba(128, 128, 128, 0.7);
   }
 
   &__iconoI{
@@ -179,6 +187,7 @@
     text-align: center;
     border-radius: .5rem;
     color: var(--color-fondo);
+    cursor: default;
   }
 }
   
@@ -242,6 +251,7 @@
 
   &__h3{
     margin: 0 0 1rem 0;
+    font-size: 2em;
     font-weight: 600;
   }
 
@@ -445,6 +455,7 @@
 
   &__h3{
     margin: 0 0 1rem 0;
+    font-size: 2em;
     font-weight: 600;
   }
 
@@ -648,6 +659,7 @@
 
   &__h3{
     margin: 0 0 1rem 0;
+    font-size: 2em;
     font-weight: 600;
   }
 
@@ -851,6 +863,7 @@
 
   &__h3{
     margin: 0 0 1rem 0;
+    font-size: 2em;
     font-weight: 600;
   }
 
@@ -1098,7 +1111,6 @@
 
   &__legal{
     margin: 2rem 0;
-    cursor: default;
   }
 }
   
