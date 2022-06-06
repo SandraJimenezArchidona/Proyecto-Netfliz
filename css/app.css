@@ -568,14 +568,14 @@ body {
 }
 .header {
   width: 100%;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 2rem 0 2rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(top, black, rgba(0, 0, 0, 0));
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .header.activo {
   background: black;
@@ -598,7 +598,7 @@ body {
           align-items: center;
 }
 .header__h1 {
-  width: 6.5rem;
+  width: 8rem;
   margin: 0 10% 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,7 +634,7 @@ body {
   opacity: 0.7;
 }
 .header__netfliz {
-  max-width: 7rem;
+  max-width: 8rem;
 }
 .header__ul {
   width: 50%;
@@ -1107,7 +1107,7 @@ body {
 }
 .tiburones__sinopsis {
   margin: 4% 0 0 0;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 120%;
 }
 .tiburones__iconos {
@@ -1138,7 +1138,7 @@ body {
 }
 .tiburones__flecha {
   position: absolute;
-  top: 15%;
+  top: 19%;
   opacity: 0;
 }
 .tiburones__flecha.activo {

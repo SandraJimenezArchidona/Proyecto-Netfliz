@@ -2,10 +2,10 @@
 
 .header{
   width: 100%;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 2rem 0 2rem 0;
   background: linear-gradient(top, black, rgba(0, 0, 0, 0));
   @include position(fixed, 0, 0, 5);
-  font-size: 1em;
+  font-size: 1.2em;
   
     &.activo{
       background: black;
@@ -17,7 +17,7 @@
   }
 
   &__h1{
-    width: 6.5rem;
+    width: 8rem;
     margin: 0 10% 0 0;
     @include flex(row, nowrap, space-between, center);
   }
@@ -32,7 +32,7 @@
   }
 
   &__netfliz{
-    max-width: 7rem;
+    max-width: 8rem;
   }
 
   &__ul{
@@ -374,7 +374,7 @@
 
   &__sinopsis{
     margin:  4% 0 0 0;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 120%;
   }
   
@@ -397,7 +397,7 @@
   
   &__flecha{
     position: absolute;
-    top: 15%;
+    top: 19%;
     opacity: 0;
 
     &.activo{
