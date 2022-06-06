@@ -1035,4 +1035,43 @@ jgutjgiferrerwe
   }
 }
 
+.footer{
+  width: 100%;
+  margin: 5rem 0 0 0;
+
+  &__wrapper{
+    width: 55%;
+    margin: auto;
+  }
+
+  &__redes{
+    width: 20%;
+    margin: 0 0 2rem 0;
+    @include flex(row, nowrap, space-between, center);
+  }
+
+  &__enlace{}
+
+  &__red{
+    width: 2rem;
+    fill: var(--color-tipo);
+  }
+
+  &__listas{
+    width: 100%;
+    @include flex(row, nowrap, space-between, center);
+  }
+
+  &__primera{}
+
+  &__segunda{}
+
+  &__tercera{}
+
+  &__cuarta{}
+    
+  &__boton{}
+
+  &__legal{}
+}
   

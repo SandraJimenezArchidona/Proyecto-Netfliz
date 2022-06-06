@@ -578,7 +578,7 @@ body {
 .header.activo {
   background: black;
 }
-.header__wrapper {
+jgutjgiferrerwe .header__wrapper {
   width: 93.5%;
   margin: auto;
   display: -webkit-box;
@@ -1894,4 +1894,50 @@ body {
 }
 .humor__der.svg:hover {
   background: rgba(0, 0, 0, 0.76);
+}
+
+.footer {
+  width: 100%;
+  margin: 5rem 0 0 0;
+}
+.footer__wrapper {
+  width: 55%;
+  margin: auto;
+}
+.footer__redes {
+  width: 20%;
+  margin: 0 0 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__red {
+  width: 2rem;
+  fill: var(--color-tipo);
+}
+.footer__listas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
