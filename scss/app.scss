@@ -56,7 +56,7 @@
   }
  
   &__lupa{
-    width: 2rem;
+    width: 1.5rem;
     margin: auto;
   }
 
@@ -79,7 +79,7 @@
   }
 
   &__campana{
-    width: 2rem;
+    width: 1.5rem;
     margin: auto;
   }
 }
@@ -103,7 +103,7 @@
   &__descripcion{
     width: 40%;
     margin: 2% 0 0 4%;
-    font-size: 1.2vw;
+    font-size: 1.5em;
     line-height: normal;
     font-weight: 600;
   }
@@ -132,7 +132,7 @@
 
   &__textoP{
     width: 48%;
-    font-size: 2.5vh;
+    font-size: 1.5em;
     font-weight: 600;
   }
 
@@ -153,7 +153,7 @@
 
   &__textoI{
     width: 48%;
-    font-size: 2.5vh;
+    font-size: 1.5em;
     font-weight: 600;
   }
 
@@ -171,10 +171,11 @@
   }
 
   &__edad{
-    padding: 5%;
+    padding: 20% 10%;
     background-color: rgb(243, 229, 40);
-    font-size: 2vh;
+    font-size: 1.25em;
     font-weight: 600;
+    line-height: 0;
     text-align: center;
     border-radius: .5rem;
     color: var(--color-fondo);
@@ -183,9 +184,10 @@
   
 .secuelas{
   width: 100%;
+  margin: 1rem 0 0 0;
 
   &__h3{
-    margin: 0 0 1rem 4%;
+    margin: 1rem 0 2rem 3%;
     font-size: 2em;
     font-weight: 600;
   }
@@ -205,6 +207,16 @@
     width: 40%;
     min-height: 8rem;
     @include flex(row, nowrap, center, center);
+    transform: scale(1);
+    transition: all .5s ease-out;
+  }
+
+  &__item:hover {
+    transform: scale(1.1);
+  }
+
+  &__item:hover .secuelas__cartel{
+    border: solid 5px var(--color-icono);
   }
 
   &__svg{
@@ -212,8 +224,13 @@
     fill: black;
   }
 
+  &__svg:hover{
+    stroke: var(--color-icono); 
+  }
+
   &__cartel{
-    width: 42%;
+    width: 42.5%;
+    border-radius: .2rem;
   }
 }
 
@@ -294,7 +311,7 @@
     filter: drop-shadow( 0 .2rem .2rem rgba(0, 0, 0, 0.1));
     overflow: hidden;
     @include position(absolute, -52%, 0, 3);
-    transition: all .5s ease-out ;
+    transition: all .5s ease-out;
     opacity: 0;
     transform: scale(0);
     transform-origin: center;
@@ -310,7 +327,6 @@
 
   &__imagen{
     width: 100%;
-    background-color: darkgoldenrod;
     border-radius: .5rem;
     z-index: 5;
   }
@@ -480,7 +496,7 @@
     z-index: 4;
   }
 
-  &__enlace:hover .tiburones__caja{
+  &__enlace:hover .engendros__caja{
     opacity: 1;
     transform: scale(1.1);
     transition: all 1s ease-in-out 1 both;
@@ -514,7 +530,6 @@
 
   &__imagen{
     width: 100%;
-    background-color: darkgoldenrod;
     border-radius: .5rem;
     z-index: 5;
   }
@@ -684,7 +699,7 @@
     z-index: 4;
   }
 
-  &__enlace:hover .tiburones__caja{
+  &__enlace:hover .monstruos__caja{
     opacity: 1;
     transform: scale(1.1);
     transition: all 1s ease-in-out 1 both;
@@ -718,7 +733,6 @@
 
   &__imagen{
     width: 100%;
-    background-color: darkgoldenrod;
     border-radius: .5rem;
     z-index: 5;
   }
@@ -888,7 +902,7 @@
     z-index: 4;
   }
 
-  &__enlace:hover .tiburones__caja{
+  &__enlace:hover .humor__caja{
     opacity: 1;
     transform: scale(1.1);
     transition: all 1s ease-in-out 1 both;
@@ -922,7 +936,6 @@
 
   &__imagen{
     width: 100%;
-    background-color: darkgoldenrod;
     border-radius: .5rem;
     z-index: 5;
   }
@@ -1035,24 +1048,28 @@
 
 .footer{
   width: 100%;
-  margin: 5rem 0 0 0;
+  margin: 9rem 0 2rem 0;
+  font-size: .9em;
+  color: var(--color-footer);
 
   &__wrapper{
-    width: 55%;
+    width: 52%;
     margin: auto;
   }
 
   &__redes{
     width: 20%;
-    margin: 0 0 2rem 0;
+    margin: 0 0 0rem 1%;
     @include flex(row, nowrap, space-between, center);
   }
-
-  &__enlace{}
 
   &__red{
     width: 2rem;
     fill: var(--color-tipo);
+  }
+
+  &__red:hover{
+    fill: var(--color-icono);
   }
 
   &__listas{
@@ -1060,16 +1077,28 @@
     @include flex(row, nowrap, space-between, center);
   }
 
-  &__primera{}
+  &__item{
+    margin: 1.5rem 0;
+    cursor: pointer;
+  }
 
-  &__segunda{}
+  &__item:hover{
+    border-bottom: solid 1px var(--color-footer);
+  }
 
-  &__tercera{}
+  &__boton{
+    padding: .75rem .5rem;
+    border: solid 1.5px var(--color-footer);
+    cursor: pointer;
+  }
 
-  &__cuarta{}
-    
-  &__boton{}
+  &__boton:hover{
+    color: var(--color-tipo);
+  }
 
-  &__legal{}
+  &__legal{
+    margin: 2rem 0;
+    cursor: default;
+  }
 }
   

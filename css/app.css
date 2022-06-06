@@ -3,6 +3,7 @@
   --color-fondo: #141414;
   --color-icono: #e50913;
   --color-caja: #181818;
+  --color-footer: grey;
   --tipo-principal: "Helvetica", sans-serif;
 }
 
@@ -687,7 +688,7 @@ body {
           align-items: center;
 }
 .header__lupa {
-  width: 2rem;
+  width: 1.5rem;
   margin: auto;
 }
 .header__usuario {
@@ -706,7 +707,7 @@ body {
           transform: rotate(180deg);
 }
 .header__campana {
-  width: 2rem;
+  width: 1.5rem;
   margin: auto;
 }
 
@@ -734,7 +735,7 @@ body {
 .principal__descripcion {
   width: 40%;
   margin: 2% 0 0 4%;
-  font-size: 1.2vw;
+  font-size: 1.5em;
   line-height: normal;
   font-weight: 600;
 }
@@ -782,7 +783,7 @@ body {
 }
 .principal__textoP {
   width: 48%;
-  font-size: 2.5vh;
+  font-size: 1.5em;
   font-weight: 600;
 }
 .principal__info {
@@ -811,7 +812,7 @@ body {
 }
 .principal__textoI {
   width: 48%;
-  font-size: 2.5vh;
+  font-size: 1.5em;
   font-weight: 600;
 }
 .principal__boton:hover {
@@ -841,10 +842,11 @@ body {
           align-items: center;
 }
 .principal__edad {
-  padding: 5%;
+  padding: 20% 10%;
   background-color: rgb(243, 229, 40);
-  font-size: 2vh;
+  font-size: 1.25em;
   font-weight: 600;
+  line-height: 0;
   text-align: center;
   border-radius: 0.5rem;
   color: var(--color-fondo);
@@ -852,9 +854,10 @@ body {
 
 .secuelas {
   width: 100%;
+  margin: 1rem 0 0 0;
 }
 .secuelas__h3 {
-  margin: 0 0 1rem 4%;
+  margin: 1rem 0 2rem 3%;
   font-size: 2em;
   font-weight: 600;
 }
@@ -895,13 +898,28 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.secuelas__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.secuelas__item:hover .secuelas__cartel {
+  border: solid 5px var(--color-icono);
 }
 .secuelas__svg {
   width: 33%;
   fill: black;
 }
+.secuelas__svg:hover {
+  stroke: var(--color-icono);
+}
 .secuelas__cartel {
-  width: 42%;
+  width: 42.5%;
+  border-radius: 0.2rem;
 }
 
 .tiburones {
@@ -1035,7 +1053,6 @@ body {
 }
 .tiburones__imagen {
   width: 100%;
-  background-color: darkgoldenrod;
   border-radius: 0.5rem;
   z-index: 5;
 }
@@ -1243,7 +1260,7 @@ body {
 .engendros__enlace:hover {
   z-index: 4;
 }
-.engendros__enlace:hover .tiburones__caja {
+.engendros__enlace:hover .engendros__caja {
   opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -1283,7 +1300,6 @@ body {
 }
 .engendros__imagen {
   width: 100%;
-  background-color: darkgoldenrod;
   border-radius: 0.5rem;
   z-index: 5;
 }
@@ -1491,7 +1507,7 @@ body {
 .monstruos__enlace:hover {
   z-index: 4;
 }
-.monstruos__enlace:hover .tiburones__caja {
+.monstruos__enlace:hover .monstruos__caja {
   opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -1531,7 +1547,6 @@ body {
 }
 .monstruos__imagen {
   width: 100%;
-  background-color: darkgoldenrod;
   border-radius: 0.5rem;
   z-index: 5;
 }
@@ -1739,7 +1754,7 @@ body {
 .humor__enlace:hover {
   z-index: 4;
 }
-.humor__enlace:hover .tiburones__caja {
+.humor__enlace:hover .humor__caja {
   opacity: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -1779,7 +1794,6 @@ body {
 }
 .humor__imagen {
   width: 100%;
-  background-color: darkgoldenrod;
   border-radius: 0.5rem;
   z-index: 5;
 }
@@ -1898,15 +1912,17 @@ body {
 
 .footer {
   width: 100%;
-  margin: 5rem 0 0 0;
+  margin: 9rem 0 2rem 0;
+  font-size: 0.9em;
+  color: var(--color-footer);
 }
 .footer__wrapper {
-  width: 55%;
+  width: 52%;
   margin: auto;
 }
 .footer__redes {
   width: 20%;
-  margin: 0 0 2rem 0;
+  margin: 0 0 0rem 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1925,6 +1941,9 @@ body {
   width: 2rem;
   fill: var(--color-tipo);
 }
+.footer__red:hover {
+  fill: var(--color-icono);
+}
 .footer__listas {
   width: 100%;
   display: -webkit-box;
@@ -1940,4 +1959,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.footer__item {
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+.footer__item:hover {
+  border-bottom: solid 1px var(--color-footer);
+}
+.footer__boton {
+  padding: 0.75rem 0.5rem;
+  border: solid 1.5px var(--color-footer);
+  cursor: pointer;
+}
+.footer__boton:hover {
+  color: var(--color-tipo);
+}
+.footer__legal {
+  margin: 2rem 0;
+  cursor: default;
 }
