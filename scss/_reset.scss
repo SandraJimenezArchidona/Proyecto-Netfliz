@@ -49,6 +49,7 @@
     text-decoration: none;
     color:inherit;
   }
+
   blockquote:before, blockquote:after, q:before, q:after {
       content: '';
       content: none;
@@ -87,4 +88,5 @@
     color       : var(--color-tipo);
     background-color: var(--color-fondo);
     overflow-x: hidden;
+    cursor: default;
   }
