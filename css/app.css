@@ -578,7 +578,7 @@ body {
 .header.activo {
   background: black;
 }
-jgutjgiferrerwe .header__wrapper {
+.header__wrapper {
   width: 93.5%;
   margin: auto;
   display: -webkit-box;
