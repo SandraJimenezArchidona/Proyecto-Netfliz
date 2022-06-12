@@ -13,18 +13,22 @@ $ (window).scroll(function(){
 
 let indice = 0 
 
+let nombre = tiburones;
+
+// esto no parece ser asi. es que nose como se usa github
+
 $('.izq').click(function(){
     indice = indice - 1
     if( indice <= -1 ){
         indice = 2
     }
     let operacion = -(100/3) * indice 
-    $('.tiburones__container').css('transform','translateX('+ operacion +'%)')
+    $('.nomnbre__container').css('transform','translateX('+ operacion +'%)')
 
-    $('.tiburones__punto').removeClass('activo')
-    $('.tiburones__item').addClass('activo')
-    $('.tiburones__punto').eq( indice ).addClass('activo')
-    $('.tiburones__item').eq( indice ).addClass('activo')
+    $('.nomnbre__punto').removeClass('activo')
+    $('.nomnbre__item').addClass('activo')
+    $('.nomnbre__punto').eq( indice ).addClass('activo')
+    $('.nomnbre__item').eq( indice ).addClass('activo')
 })
 
 $('.der').click(function(){
@@ -33,22 +37,22 @@ $('.der').click(function(){
         indice = 0
     }
     let operacion = -(100/3) * indice 
-    $('.tiburones__container').css('transform','translateX('+ operacion +'%)')
+    $('.nomnbre__container').css('transform','translateX('+ operacion +'%)')
 
-    $('.tiburones__punto').removeClass('activo')
-    $('.tiburones__item').addClass('activo')
-    $('.tiburones__punto').eq( indice ).addClass('activo')
-    $('.tiburones__item').eq( indice ).addClass('activo') 
+    $('.nomnbre__punto').removeClass('activo')
+    $('.nomnbre__item').addClass('activo')
+    $('.nomnbre__punto').eq( indice ).addClass('activo')
+    $('.nomnbre__item').eq( indice ).addClass('activo') 
 })
 
-$('.tiburones').mouseover(function(){
-    $('.tiburones__puntos').addClass('activo')
-    $('.tiburones__flecha').addClass('activo')
+$('.nomnbre').mouseover(function(){
+    $('.nomnbre__puntos').addClass('activo')
+    $('.nomnbre__flecha').addClass('activo')
 })
 
 $('.tiburones').mouseout(function(){
-    $('.tiburones__puntos').removeClass('activo')
-    $('.tiburones__flecha').removeClass('activo')
+    $('.nomnbre__puntos').removeClass('activo')
+    $('.nomnbre__flecha').removeClass('activo')
 })
 
 
