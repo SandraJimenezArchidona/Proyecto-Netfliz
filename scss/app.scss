@@ -397,7 +397,7 @@
   
   &__flecha{
     position: absolute;
-    top: 19%;
+    top: 20.1%;
     opacity: 0;
 
     &.activo{
@@ -413,7 +413,7 @@
 
   &__izq.svg{
     width: 200%;
-    height: 17.5rem;
+    height: 17.3rem;
     padding: 50%;
     border-radius: .5rem;
     background: rgba(0, 0, 0, 0.438);
@@ -432,7 +432,7 @@
 
   &__der.svg{
     width: 200%;
-    height: 17.5rem;
+    height: 17.3rem;
     padding: 50%;
     border-radius: .5rem;
     background: rgba(0, 0, 0, 0.438);
@@ -601,7 +601,7 @@
   
   &__flecha{
     position: absolute;
-    top: 15%;
+    top: 20.1%;
     opacity: 0;
 
     &.activo{
@@ -609,7 +609,7 @@
     }
   } 
 
-  &__flecha.izquierda{
+  &__flecha.izq{
     width: 1.5rem;
     height: 5rem;
     left:0;
@@ -617,7 +617,7 @@
 
   &__izq.svg{
     width: 200%;
-    height: 17.5rem;
+    height: 17.3rem;
     padding: 50%;
     border-radius: .5rem;
     background: rgba(0, 0, 0, 0.438);
@@ -628,7 +628,7 @@
     background: rgba(0, 0, 0, 0.76);
   }
 
-  &__flecha.derecha{
+  &__flecha.der{
     width: 1.5rem;
     height: 5rem;
     right: 4%;
@@ -636,7 +636,7 @@
 
   &__der.svg{
     width: 200%;
-    height: 17.5rem;
+    height: 17.3rem;
     padding: 50%;
     border-radius: .5rem;
     background: rgba(0, 0, 0, 0.438);
@@ -805,7 +805,7 @@
   
   &__flecha{
     position: absolute;
-    top: 15%;
+    top: 20.1%;
     opacity: 0;
 
     &.activo{
@@ -813,7 +813,7 @@
     }
   } 
 
-  &__flecha.le{
+  &__flecha.izq{
     width: 1.5rem;
     height: 5rem;
     left:0;
@@ -821,7 +821,7 @@
 
   &__izq.svg{
     width: 200%;
-    height: 17.5rem;
+    height: 17.3rem;
     padding: 50%;
     border-radius: .5rem;
     background: rgba(0, 0, 0, 0.438);
@@ -832,7 +832,7 @@
     background: rgba(0, 0, 0, 0.76);
   }
 
-  &__flecha.ri{
+  &__flecha.der{
     width: 1.5rem;
     height: 5rem;
     right: 4%;
@@ -840,7 +840,7 @@
 
   &__der.svg{
     width: 200%;
-    height: 17.5rem;
+    height: 17.3rem;
     padding: 50%;
     border-radius: .5rem;
     background: rgba(0, 0, 0, 0.438);
@@ -1009,7 +1009,7 @@
   
   &__flecha{
     position: absolute;
-    top: 15%;
+    top: 20.1%;
     opacity: 0;
 
     &.activo{
@@ -1017,7 +1017,7 @@
     }
   } 
 
-  &__flecha.left{
+  &__flecha.izq{
     width: 1.5rem;
     height: 5rem;
     left:0;
@@ -1025,7 +1025,7 @@
 
   &__izq.svg{
     width: 200%;
-    height: 17.5rem;
+    height: 17.3rem;
     padding: 50%;
     border-radius: .5rem;
     background: rgba(0, 0, 0, 0.438);
@@ -1036,7 +1036,7 @@
     background: rgba(0, 0, 0, 0.76);
   }
 
-  &__flecha.rigth{
+  &__flecha.der{
     width: 1.5rem;
     height: 5rem;
     right: 4%;
@@ -1044,7 +1044,7 @@
 
   &__der.svg{
     width: 200%;
-    height: 17.5rem;
+    height: 17.3rem;
     padding: 50%;
     border-radius: .5rem;
     background: rgba(0, 0, 0, 0.438);

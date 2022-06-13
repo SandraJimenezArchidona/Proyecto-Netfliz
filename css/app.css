@@ -1138,7 +1138,7 @@ body {
 }
 .tiburones__flecha {
   position: absolute;
-  top: 19%;
+  top: 20.1%;
   opacity: 0;
 }
 .tiburones__flecha.activo {
@@ -1151,7 +1151,7 @@ body {
 }
 .tiburones__izq.svg {
   width: 200%;
-  height: 17.5rem;
+  height: 17.3rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1168,7 +1168,7 @@ body {
 }
 .tiburones__der.svg {
   width: 200%;
-  height: 17.5rem;
+  height: 17.3rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1386,20 +1386,20 @@ body {
 }
 .engendros__flecha {
   position: absolute;
-  top: 15%;
+  top: 20.1%;
   opacity: 0;
 }
 .engendros__flecha.activo {
   opacity: 1;
 }
-.engendros__flecha.izquierda {
+.engendros__flecha.izq {
   width: 1.5rem;
   height: 5rem;
   left: 0;
 }
 .engendros__izq.svg {
   width: 200%;
-  height: 17.5rem;
+  height: 17.3rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1409,14 +1409,14 @@ body {
 .engendros__izq.svg:hover {
   background: rgba(0, 0, 0, 0.76);
 }
-.engendros__flecha.derecha {
+.engendros__flecha.der {
   width: 1.5rem;
   height: 5rem;
   right: 4%;
 }
 .engendros__der.svg {
   width: 200%;
-  height: 17.5rem;
+  height: 17.3rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1634,20 +1634,20 @@ body {
 }
 .monstruos__flecha {
   position: absolute;
-  top: 15%;
+  top: 20.1%;
   opacity: 0;
 }
 .monstruos__flecha.activo {
   opacity: 1;
 }
-.monstruos__flecha.le {
+.monstruos__flecha.izq {
   width: 1.5rem;
   height: 5rem;
   left: 0;
 }
 .monstruos__izq.svg {
   width: 200%;
-  height: 17.5rem;
+  height: 17.3rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1657,14 +1657,14 @@ body {
 .monstruos__izq.svg:hover {
   background: rgba(0, 0, 0, 0.76);
 }
-.monstruos__flecha.ri {
+.monstruos__flecha.der {
   width: 1.5rem;
   height: 5rem;
   right: 4%;
 }
 .monstruos__der.svg {
   width: 200%;
-  height: 17.5rem;
+  height: 17.3rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1882,20 +1882,20 @@ body {
 }
 .humor__flecha {
   position: absolute;
-  top: 15%;
+  top: 20.1%;
   opacity: 0;
 }
 .humor__flecha.activo {
   opacity: 1;
 }
-.humor__flecha.left {
+.humor__flecha.izq {
   width: 1.5rem;
   height: 5rem;
   left: 0;
 }
 .humor__izq.svg {
   width: 200%;
-  height: 17.5rem;
+  height: 17.3rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
@@ -1905,14 +1905,14 @@ body {
 .humor__izq.svg:hover {
   background: rgba(0, 0, 0, 0.76);
 }
-.humor__flecha.rigth {
+.humor__flecha.der {
   width: 1.5rem;
   height: 5rem;
   right: 4%;
 }
 .humor__der.svg {
   width: 200%;
-  height: 17.5rem;
+  height: 17.3rem;
   padding: 50%;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.438);
