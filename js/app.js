@@ -11,88 +11,91 @@ $ (window).scroll(function(){
     }
 })
 
-let indice = 0 
+function creaSlider( nombreClase ){
+    
+    let indice = 0 
+    
+    $(nombreClase+'__flecha.izq').click(function(){
+        indice = indice - 1
+        if( indice <= -1 ){
+            indice = 2
+        }
+        let operacion = -(100/3) * indice 
+        $(nombreClase+'__container').css('transform','translateX('+ operacion +'%)')
+    
+        $(nombreClase+'__punto').removeClass('activo')
+        $(nombreClase+'__item').addClass('activo')
+        $(nombreClase+'__punto').eq( indice ).addClass('activo')
+        $(nombreClase+'__item').eq( indice ).addClass('activo')
+    })
+    
+    $(nombreClase+'__flecha.der').click(function(){
+        indice = indice + 1
+        if( indice >= 3 ){
+            indice = 0
+        }
+        let operacion = -(100/3) * indice 
+        $(nombreClase+'__container').css('transform','translateX('+ operacion +'%)')
+    
+        $(nombreClase+'__punto').removeClass('activo')
+        $(nombreClase+'__item').addClass('activo')
+        $(nombreClase+'__punto').eq( indice ).addClass('activo')
+        $(nombreClase+'__item').eq( indice ).addClass('activo') 
+    })
+    
+    $(nombreClase).mouseover(function(){
+        $(nombreClase+'__puntos').addClass('activo')
+        $(nombreClase+'__flecha').addClass('activo')
+    })
+    
+    $(nombreClase+'').mouseout(function(){
+        $(nombreClase+'__puntos').removeClass('activo')
+        $(nombreClase+'__flecha').removeClass('activo')
+    })
 
-let nombre = tiburones;
+}
 
-// esto no parece ser asi. es que nose como se usa github
-
-$('.izq').click(function(){
-    indice = indice - 1
-    if( indice <= -1 ){
-        indice = 2
-    }
-    let operacion = -(100/3) * indice 
-    $('.nomnbre__container').css('transform','translateX('+ operacion +'%)')
-
-    $('.nomnbre__punto').removeClass('activo')
-    $('.nomnbre__item').addClass('activo')
-    $('.nomnbre__punto').eq( indice ).addClass('activo')
-    $('.nomnbre__item').eq( indice ).addClass('activo')
-})
-
-$('.der').click(function(){
-    indice = indice + 1
-    if( indice >= 3 ){
-        indice = 0
-    }
-    let operacion = -(100/3) * indice 
-    $('.nomnbre__container').css('transform','translateX('+ operacion +'%)')
-
-    $('.nomnbre__punto').removeClass('activo')
-    $('.nomnbre__item').addClass('activo')
-    $('.nomnbre__punto').eq( indice ).addClass('activo')
-    $('.nomnbre__item').eq( indice ).addClass('activo') 
-})
-
-$('.nomnbre').mouseover(function(){
-    $('.nomnbre__puntos').addClass('activo')
-    $('.nomnbre__flecha').addClass('activo')
-})
-
-$('.tiburones').mouseout(function(){
-    $('.nomnbre__puntos').removeClass('activo')
-    $('.nomnbre__flecha').removeClass('activo')
-})
+creaSlider( '.tiburones' );
+creaSlider( '.engendros' );
 
 
-$('.izquierda').click(function(){
-    indice = indice - 1
-    if( indice <= -1 ){
-        indice = 2
-    }
-    let operacion = -(100/3) * indice 
-    $('.engendros__container').css('transform','translateX('+ operacion +'%)')
+// $('.izquierda').click(function(){
+//     indice = indice - 1
+//     if( indice <= -1 ){
+//         indice = 2
+//     }
+//     let operacion = -(100/3) * indice 
+//     $('.engendros__container').css('transform','translateX('+ operacion +'%)')
 
-    $('.engendros__punto').removeClass('activo')
-    $('.engendros__item').addClass('activo')
-    $('.engendros__punto').eq( indice ).addClass('activo')
-    $('.engendros__item').eq( indice ).addClass('activo')
-})
+//     $('.engendros__punto').removeClass('activo')
+//     $('.engendros__item').addClass('activo')
+//     $('.engendros__punto').eq( indice ).addClass('activo')
+//     $('.engendros__item').eq( indice ).addClass('activo')
+// })
 
-$('.derecha').click(function(){
-    indice = indice + 1
-    if( indice >= 3 ){
-        indice = 0
-    }
-    let operacion = -(100/3) * indice 
-    $('.engendros__container').css('transform','translateX('+ operacion +'%)')
+// $('.derecha').click(function(){
+//     indice = indice + 1
+//     if( indice >= 3 ){
+//         indice = 0
+//     }
+//     let operacion = -(100/3) * indice 
+//     $('.engendros__container').css('transform','translateX('+ operacion +'%)')
 
-    $('.engendros__punto').removeClass('activo')
-    $('.engendros__item').addClass('activo')
-    $('.engendros__punto').eq( indice ).addClass('activo')
-    $('.engendros__item').eq( indice ).addClass('activo') 
-})
+//     $('.engendros__punto').removeClass('activo')
+//     $('.engendros__item').addClass('activo')
+//     $('.engendros__punto').eq( indice ).addClass('activo')
+//     $('.engendros__item').eq( indice ).addClass('activo') 
+// })
 
-$('.engendros').mouseover(function(){
-    $('.engendros__puntos').addClass('activo')
-    $('.engendros__flecha').addClass('activo')
-})
+// $('.engendros').mouseover(function(){
+//     $('.engendros__puntos').addClass('activo')
+//     $('.engendros__flecha').addClass('activo')
+// })
 
-$('.engendros').mouseout(function(){
-    $('.engendros__puntos').removeClass('activo')
-    $('.engendros__flecha').removeClass('activo')
-})
+// $('.engendros').mouseout(function(){
+//     $('.engendros__puntos').removeClass('activo')
+//     $('.engendros__flecha').removeClass('activo')
+// })
 
 
 $('.le').click(function(){
