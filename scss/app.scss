@@ -2,10 +2,10 @@
 
 .header{
   width: 100%;
-  padding: 2rem 0 2rem 0;
+  padding: 1% 0;
   background: linear-gradient(top, black, rgba(0, 0, 0, 0));
   @include position(fixed, 0, 0, 5);
-  font-size: 1.2em;
+  font-size: .9em;
   
     &.activo{
       background: black;
@@ -32,7 +32,7 @@
   }
 
   &__netfliz{
-    max-width: 8rem;
+    max-width: 6rem;
   }
 
   &__ul{
@@ -374,7 +374,7 @@
 
   &__sinopsis{
     margin:  4% 0 0 0;
-    font-size: 1.2em;
+    font-size: .9em;
     line-height: 120%;
   }
   
@@ -578,7 +578,7 @@
 
   &__sinopsis{
     margin:  4% 0 0 0;
-    font-size: 1.2em;
+    font-size: .9em;
     line-height: 120%;
   }
   
@@ -782,7 +782,7 @@
 
   &__sinopsis{
     margin:  4% 0 0 0;
-    font-size: 1.2em;
+    font-size: .9em;
     line-height: 120%;
   }
   
@@ -986,7 +986,7 @@
 
   &__sinopsis{
     margin:  4% 0 0 0;
-    font-size: 1.2em;
+    font-size: .9em;
     line-height: 120%;
   }
   

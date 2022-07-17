@@ -50,15 +50,6 @@
     color:inherit;
   }
 
-  blockquote:before, blockquote:after, q:before, q:after {
-      content: '';
-      content: none;
-  }
-  
-  ::selection {
-    background-color: var(--negro);
-    color: var(--blanco);
-  }
   
   form , input , textarea , select , button , label{
     font-family: inherit;
@@ -69,11 +60,6 @@
     display: block;
   }
   
-  table , tr , td {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  
   svg{
       width: 100%;
       display: block;
@@ -82,7 +68,6 @@
   
   body {
     min-height  : 100vh;
-    margin: auto;
     font-size   : 100%;
     font-family : var(--tipo-principal);
     color       : var(--color-tipo);
